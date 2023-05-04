@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Patyele</title>
+    <link rel="stylesheet" href="projeto.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@200;300&display=swap">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="Logo3.jpg" alt="Logo Mariana Patyele" id="logo"><!--logo imagem-->
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/mpatyele" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mariana-pereira-8a80a721b/" target="_blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="Mailto:mariana01.pp@gmail.com" target="_blank">E-mail</a>
+            </li>
+            <li>
+                <a href="https://wa.me/629999999" target="_blank">WhatsApp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Mariana Patyele</h1>
+                <h5>FullStack Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fi fi-rr-caret-up"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p> Olá, sou Mariana! Apaixonada por tecnologia e em estar aprimorando skills profissionais e interpessoais, tendo como missão contribuir na vida das pessoas resolvendo problemas por meio de projetos de forma a empregar os conhecimentos que tenho adquirido ao longo da minha jornada como desenvolvedora.</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :]">
+                    <button>Enviar</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+
+
+    </script>
+</body>
+
+</html>
